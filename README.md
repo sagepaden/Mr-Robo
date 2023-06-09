@@ -26,7 +26,7 @@ _This HTML document showcases my JavaScript skills using loops, array methods, a
 
 ## Known Bugs
 
-* _Website will break if user inputs a number larger than 3999999, or 3e6_
+* _No known bugs at this time_
 
 ## License
 
