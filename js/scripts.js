@@ -1,4 +1,4 @@
-// Business Logic
+// Bussiness Logic
 
 function mrRobo(userNumber) {
 
