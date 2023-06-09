@@ -1,9 +1,9 @@
 // Business Logic
 
-function mrRobo(userNumber) {
+function mrRobo(number) {
   let loopOutput = [];
 
-  for (i = 0; i <= userNumber; i++) {
+  for (i = 0; i <= number; i++) {
     if (i.toString().includes('3')) {
       loopOutput.push("Won't you be my neighbor?");
 
@@ -16,10 +16,18 @@ function mrRobo(userNumber) {
     } else {
       loopOutput.push(i);
     }
-    console.log(loopOutput);
   }
+  return loopOutput;
 }
 
 
 // UI Logic
 
+document.addEventListener('submit', function(event) {
+  event.preventDefault();
+  const usersNumber = document.getElementById('ui-user-number').value;
+  const arrayOutput = mrRobo(usersNumber);
+  const outputAsString = arrayOutput.join(", ");
+  document.getElementById('ui-array-output');
+
+})
