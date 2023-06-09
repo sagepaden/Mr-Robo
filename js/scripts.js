@@ -28,6 +28,6 @@ document.addEventListener('submit', function(event) {
   const usersNumber = document.getElementById('ui-user-number').value;
   const arrayOutput = mrRobo(usersNumber);
   const outputAsString = arrayOutput.join(", ");
-  document.getElementById('ui-array-output');
+  document.getElementById("ui-array-output").innerText = "Your cheeky lil array is:" + outputAsString;
 
 })
